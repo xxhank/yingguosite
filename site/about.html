@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>迎果科技</title>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+</head>
+<body>
+        <nav>
+        <ul>
+        <li> <img src="images/横版迎果logo.png"></li>
+        <li>首页</li>
+        <li>游戏</li>
+        <li>应用</li>
+        <li>关于我们</li>
+    </ul>
+</nav>
+
+<div id=banner>
+    <ul>
+    <li><img src="images/首页banner01.jpg"></li>
+    <li><img src="images/首页banner02.jpg"></li>
+    <li><img src="images/首页banner03.jpg"></li>
+    <li><img src="images/首页banner04.jpg"></li>
+    <li><img src="images/首页banner05.jpg"></li>
+    <li><img src="images/首页banner06.jpg"></li>
+    <li><img src="images/首页banner07.jpg"></li>
+   <li> <img src="images/首页banner08.jpg"></li>
+    </ul>
+</div>
+<script type="text/javascript">
+        var li=document.getElementById('banner').getElementsByTagName("li");
+    var num=0;
+    var len=li.length;
+
+    setInterval(function(){
+        li[num].style.display="none";
+        num=++num==len?0:num;
+        li[num].style.display="inline-block";
+
+    },3000);//切换时间
+</script>
+<div>
+<ul>
+    <li>
+        <h1>关于我们</h1>
+        <div>
+            <img src="">
+        <div>
+        <h2>北京迎果科技有限公司</h2>
+           <p>xxxxx</p>
+       </div>
+     </div>
+     <div>
+            <img src="">
+        <div>
+        <h2>管理团队</h2>
+        <p>xxxxx</p>
+               </div>
+     </div>
+     <div>
+            <img src="">
+        <div>
+        <h2>技术平台</h2>
+        <p>xxxxx</p>
+   </div>
+     </div>
+    </li>
+    <li><h1>联系方式</h1></li>
+</ul>
+</div>
+
+<footer>
+    苏ICP备15060253号-3<br>
+    Copyright@2010 - 2016  www.bjygmobile.com  All Right Reavered
+</footer>
+</body>
+</html>

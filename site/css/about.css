@@ -1,0 +1,11 @@
+h1 {
+    font-size: 15px;
+    color: blue;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: normal;
+    border-bottom-color: #7FFFD4;
+    border-bottom-style: 2px solid;
+}
