@@ -1,27 +1,63 @@
-p {
-    font-size: large;
-    color: blue;
-    font-weight: bolder;
-    text-align: left;
-}
+ /* banner */
 
-.artical-comment{
-    font-size: small;
-    color: black;
-    font-weight: normal;
+ #banner img {
+     width: 100%;
+     height: 100%;
+ }
+ /* main */
 
-}
+ #information {
+     padding: 20px;
+ }
 
-.artical-top{
-    font-size: medium;
-    color: black;
-    border-bottom-style: 2px solid #7FFFD4;
-}
-#information {
-    margin: 0 20% 0 20%;
+ #information li>p {
+     font-size: 30px;
+     border-left: 10px solid blue;
+     text-align: left;
+     height: 56px;
+     line-height: 56px;
+     padding-left: 20px;
+     color: blue;
+     margin: 40px 0px 60px 0;
+ }
+ /*  */
 
-}
+ table {
+     padding: 0 40px 0 60px;
+ }
 
-tr td{
-    margin: 0px 40px 0px 40px;
-}
+ td>img {
+     width: 260px;
+     height: 220px;
+ }
+
+ td {
+     padding-bottom: 30px;
+ }
+ /*  */
+
+ .artical-right-panel {
+     padding-left: 20px;
+     text-align: left;
+     color: #575757;
+ }
+
+ .artical-top {
+     font-size: 24px;
+     border-bottom: 1px solid #93d059;
+     padding-bottom: 15px;
+     margin-bottom: 15px;
+ }
+
+ .artical-comment {
+     font-size: 15px;
+ }
+
+ .image-container {
+     text-align: left;
+ }
+
+ .image-container img {
+     border: 1px solid #cccccc;
+     margin-left: 60px;
+ }
