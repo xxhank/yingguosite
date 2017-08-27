@@ -1,77 +1,285 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta charset="utf-8">
     <title>迎果科技</title>
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/apps.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
 </head>
+
 <body>
-        <nav>
+    <nav>
         <ul>
-        <li> <img src="images/横版迎果logo.png"></li>
-        <li>首页</li>
-        <li>游戏</li>
-        <li>应用</li>
-        <li>关于我们</li>
-    </ul>
-</nav>
-
-<div id=banner>
-    <ul>
-    <li><img src="images/首页banner01.jpg"></li>
-    <li><img src="images/首页banner02.jpg"></li>
-    <li><img src="images/首页banner03.jpg"></li>
-    <li><img src="images/首页banner04.jpg"></li>
-    <li><img src="images/首页banner05.jpg"></li>
-    <li><img src="images/首页banner06.jpg"></li>
-    <li><img src="images/首页banner07.jpg"></li>
-   <li> <img src="images/首页banner08.jpg"></li>
-    </ul>
-</div>
-<script type="text/javascript">
-        var li=document.getElementById('banner').getElementsByTagName("li");
-    var num=0;
-    var len=li.length;
-
-    setInterval(function(){
-        li[num].style.display="none";
-        num=++num==len?0:num;
-        li[num].style.display="inline-block";
-
-    },3000);//切换时间
-</script>
-<div>
-<ul>
-    <li>
-        <h1>关于我们</h1>
-        <div>
-            <img src="">
-        <div>
-        <h2>北京迎果科技有限公司</h2>
-           <p>xxxxx</p>
-       </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>管理团队</h2>
-        <p>xxxxx</p>
-               </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>技术平台</h2>
-        <p>xxxxx</p>
-   </div>
-     </div>
-    </li>
-    <li><h1>联系方式</h1></li>
-</ul>
-</div>
-
-<footer>
-    苏ICP备15060253号-3<br>
-    Copyright@2010 - 2016  www.bjygmobile.com  All Right Reavered
-</footer>
+            <li> <img src="images/横版迎果logo.png"></li>
+            <li>首页</li>
+            <li>游戏</li>
+            <li>应用</li>
+            <li>关于我们</li>
+        </ul>
+    </nav>
+    <div class="main-top">
+        <dl class="tag-list">
+            <dt>
+                <img src="" alt="">
+                <p>休闲益智</p>
+            </dt>
+            <dd>消除 物理 音乐 策略塔防 休闲 猜猜看</dd>
+            <dt>
+                <img src="" alt="">
+                <p>动作射击</p>
+            </dt>
+            <dd>跑酷 格斗 空战 枪战 坦克</dd>
+            <dt>
+                <img src="" alt="">
+                <p>赛车竞速</p>
+            </dt>
+            <dd>赛车 摩托 模拟驾驶</dd>
+            <dt>
+                <img src="" alt="">
+                <p>网络游戏</p>
+            </dt>
+            <dd>卡牌 经营 RPG 动作</dd>
+            <dt>
+                <img src="" alt="">
+                <p>棋牌桌游</p>
+            </dt>
+            <dd>斗地主 麻将 棋类 桌游 纸牌</dd>
+            <dt>
+                <img src="" alt="">
+                <p>经营养成</p>
+            </dt>
+            <dd>战争 经营 装扮</dd>
+            <dt>
+                <img src="" alt="">
+                <p>角色扮演</p>
+            </dt>
+            <dd>解谜逃脱 回合制 ARPG 三国</dd>
+            <dt>
+                <img src="" alt="">
+                <p>体育竞技</p>
+            </dt>
+            <dd>篮球 足球 桌球 拳击 趣味运动</dd>
+            <dt>
+                <img src="" alt="">
+                <p>模拟辅助</p>
+            </dt>
+            <dd>模拟器 游戏助手 攻略</dd>
+        </dl>
+    </div>
+    <div class="games">
+        <table>
+            <tr>
+                <td>
+                    <img src="">
+                    <p>皇室战争-新天梯模式</p>
+                    <p>8362万下载 102.14MB</p>
+                </td>
+                <td>
+                    <img src="">
+                    <p>卡通农场</p>
+                    <p>945万下载 88.41MB</p>
+                </td>
+                <td>
+                    <img src="">
+                    <p>球球大作战</p>
+                    <p>1.1亿下载 76.06MB</p>
+                </td>
+                <td>
+                    <img src="">
+                    <p>保卫萝卜3</p>
+                    <p>842万下载 170.27MB</p>
+                </td>
+                <td>
+                    <img src="">
+                    <p>不思议迷宫</p>
+                    <p>6万下载 93.93MB</p>
+                </td>
+                <td>
+                    <img src="">
+                    <p>聚爆</p>
+                    <p>46万下载 1.75GB</p>
+                </td>
+            </tr>
+            <td>
+                <img src="">
+                <p>迷你世界</p>
+                <p>1445万下载 66.67MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>汤姆猫跑酷</p>
+                <p>2754万下载 65.6MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>我的汤姆猫</p>
+                <p>1472万下载 79.17MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>我的世界盒子(联机版)</p>
+                <p>3029万下载 15.28MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>欢乐麻将</p>
+                <p>3664万下载 57.83MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>宾果消消消</p>
+                <p>1982万下载 82.72MB</p>
+            </td>
+            </tr>
+        </table>
+    </div>
+    <div class="nesapps">
+        <ul>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>天天爱消除</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>6631万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>崩坏学园2</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>17万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>火影忍者</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>1003万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>小冰冰传奇</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>1967万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>欢乐斗地主</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>627万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>我叫MT</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>1495万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>地铁跑酷</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>2581万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>拳皇98</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>427万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>保卫萝卜</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>842万</p>
+            </li>
+            <li>
+                <img class="gameicon" src="" alt="">
+                <p>宾果消消消</p>
+                <img class="stars" src="" alt="">
+                <img class="download" src="" alt="">
+                <p>1982万</p>
+            </li>
+        </ul>
+    </div>
+    <div class="hotapps">
+        <table></table>
+        <tr>
+            <td>
+                <img src="">
+                <p>倩女幽魂</p>
+                <p>886万下载 558.82MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>梦幻诛仙</p>
+                <p>81万下载 351.2MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>老爹神偷</p>
+                <p>72万下载 24.09MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>率土之滨</p>
+                <p>52万下载 170.23MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>剑雨九天</p>
+                <p>7万下载 110.07MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>问道</p>
+                <p>382下载 420.18MB</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="">
+                <p>大话西游</p>
+                <p>748万下载 582.97MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>奇迹暖暖</p>
+                <p>2444万下载 355.92MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>神武2</p>
+                <p>73万下载 344MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>龙珠激斗(正版)</p>
+                <p>101万下载 405.13MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>剑侠世界</p>
+                <p>104万下载 660.14MB</p>
+            </td>
+            <td>
+                <img src="">
+                <p>热血传奇</p>
+                <p>415万下载 497.14MB</p>
+            </td>
+        </tr>
+    </div>
+    <footer>
+        苏ICP备15060253号-3
+        <br> Copyright@2014 - 2017 www.bjygmobile.com All Right Resvered
+    </footer>
 </body>
+
 </html>

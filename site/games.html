@@ -1,77 +1,245 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>迎果科技</title>
-    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <link rel="stylesheet" type="text/css" href="css/debug-.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/games.css">
+    <link rel="stylesheet" type="text/css" href="vendor/jquery-pagination/css/jquery.pagination.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="vendor/jquery-pagination/js/jquery.pagination.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+        $("#pagination3").pagination({
+            currentPage: 1,
+            totalPage: 16,
+            isShow: true,
+            count: 7,
+            homePageText: "首页",
+            endPageText: "尾页",
+            prevPageText: "上一页",
+            nextPageText: "下一页",
+            callback: function(current) {
+                $("#current3").text(current)
+            }
+        });
+
+    });
+    </script>
 </head>
+
 <body>
-        <nav>
+    <nav>
         <ul>
-        <li> <img src="images/横版迎果logo.png"></li>
-        <li>首页</li>
-        <li>游戏</li>
-        <li>应用</li>
-        <li>关于我们</li>
-    </ul>
-</nav>
-
-<div id=banner>
-    <ul>
-    <li><img src="images/首页banner01.jpg"></li>
-    <li><img src="images/首页banner02.jpg"></li>
-    <li><img src="images/首页banner03.jpg"></li>
-    <li><img src="images/首页banner04.jpg"></li>
-    <li><img src="images/首页banner05.jpg"></li>
-    <li><img src="images/首页banner06.jpg"></li>
-    <li><img src="images/首页banner07.jpg"></li>
-   <li> <img src="images/首页banner08.jpg"></li>
-    </ul>
-</div>
-<script type="text/javascript">
-        var li=document.getElementById('banner').getElementsByTagName("li");
-    var num=0;
-    var len=li.length;
-
-    setInterval(function(){
-        li[num].style.display="none";
-        num=++num==len?0:num;
-        li[num].style.display="inline-block";
-
-    },3000);//切换时间
-</script>
-<div>
-<ul>
-    <li>
-        <h1>关于我们</h1>
-        <div>
-            <img src="">
-        <div>
-        <h2>北京迎果科技有限公司</h2>
-           <p>xxxxx</p>
-       </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>管理团队</h2>
-        <p>xxxxx</p>
-               </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>技术平台</h2>
-        <p>xxxxx</p>
-   </div>
-     </div>
-    </li>
-    <li><h1>联系方式</h1></li>
-</ul>
-</div>
-
-<footer>
-    苏ICP备15060253号-3<br>
-    Copyright@2010 - 2016  www.bjygmobile.com  All Right Reavered
-</footer>
+            <li><img src="images/横版迎果logo.png"></li>
+            <li>首页</li>
+            <li>游戏</li>
+            <li>应用</li>
+            <li>关于我们</li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="game-rank" class="left-bar left">
+            <span id="game-rank-name"><blue class="blue">游戏</blue>排行</span>
+            <ul>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/games/神谕之剑.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">赤月传说II</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">皇图</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">雷霆之怒</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">战无不胜</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">烈焰</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">魅影传说</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">特战英雄</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">范伟打天下</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">蓝月传说</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">魔龙之戒</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+                <li class="rank-cell">
+                    <img class="rank-cell-left" src="images/leftbar/皇图.png" alt="">
+                    <div class="rank-cell-right">
+                        <p class="rank-game-name">村长征战团</p>
+                        <p class="rank-game-brief">下载量:1W</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="all-games" class="all-games">
+            <div id="all-games-header">
+                <span id="all-games-header-title" class="left"><blue class="blue">全部</blue>游戏</span>
+                <input class="right" type="textfile" name="" placeholder="搜索你喜欢的游戏">
+            </div>
+            <dl class="all-games-filter">
+                <dd><span class="filter-field">类型:</span><span class="filter-field-value blue">不限</span> |<span class="filter-field-value"> 角色扮演 </span>|<span class="filter-field-value"> 战争策略 </span>|<span class="filter-field-value"> 休闲竞技 </span>|<span class="filter-field-value"> 模拟经营 </span>|<span class="filter-field-value"> 社区养成</span></dd>
+                <dd><span class="filter-field">题材:</span><span class="filter-field-value blue">不限</span> |<span class="filter-field-value"> PK </span>|<span class="filter-field-value"> 三国 </span>|<span class="filter-field-value"> 国战 </span>|<span class="filter-field-value"> 魔幻 </span>|<span class="filter-field-value"> 武侠 </span>|<span class="filter-field-value"> 仙侠 </span>|<span class="filter-field-value"> 军事 </span>|<span class="filter-field-value"> 盗墓 体育 </span>|<span class="filter-field-value"> 玄幻 </span>|<span class="filter-field-value"> 历史 </span>|<span class="filter-field-value"> 休闲</span></dd>
+                <dd><span class="filter-field">字母:</span><span class="filter-field-value blue">不限</span> |<span class="filter-field-value"> A </span>|<span class="filter-field-value"> C </span>|<span class="filter-field-value"> D </span>|<span class="filter-field-value"> F </span>|<span class="filter-field-value"> H </span>|<span class="filter-field-value"> J </span>|<span class="filter-field-value"> L </span>|<span class="filter-field-value"> M </span>|<span class="filter-field-value"> O </span>|<span class="filter-field-value"> R </span>|<span class="filter-field-value"> S </span>|<span class="filter-field-value"> T </span>|<span class="filter-field-value"> W </span>|<span class="filter-field-value"> X </span>|<span class="filter-field-value"> Y </span>|<span class="filter-field-value"> Z </span></dd>
+            </dl>
+            <div class="game-list">
+                <table>
+                    <tr>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">赤月传说</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">皇图</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">雷霆之怒</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">魅影传说</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">赤月传说</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">热血三国</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">烈焰</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">神谕之剑</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">蓝月传说</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">特战英雄</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">范伟打天下</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                        <td class="game-list-cell">
+                            <img class="game-list-cell-icon" src="images/games/神谕之剑.png">
+                            <img class="type" src="">
+                            <span class="game-list-cell-name">传奇盛世</span>
+                            <span class="game-list-cell-size">200M</span>
+                            <span class="game-list-cell-download">下载量:1W</span>
+                        </td>
+                    </tr>
+                </table>
+                <div class="box">
+                    <div id="pagination3" class="page fl"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <footer>
+        苏ICP备15060253号-3
+        <br> Copyright@2014 - 2017 www.bjygmobile.com All Right Resvered
+    </footer>
 </body>
+
 </html>

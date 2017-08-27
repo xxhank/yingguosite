@@ -1,77 +1,84 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>迎果科技</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/about.css">
 </head>
+
 <body>
-        <nav>
+    <nav>
         <ul>
-        <li> <img src="images/横版迎果logo.png"></li>
-        <li>首页</li>
-        <li>游戏</li>
-        <li>应用</li>
-        <li>关于我们</li>
-    </ul>
-</nav>
+            <li> <img src="images/横版迎果logo.png"></li>
+            <li>首页</li>
+            <li>游戏</li>
+            <li>应用</li>
+            <li>关于我们</li>
+        </ul>
+    </nav>
+    <div id="banner">
+        <ul>
+            <li><img src="images/banners/banner01.jpg"></li>
+            <li><img src="images/banners/banner02.jpg"></li>
+            <li><img src="images/banners/banner03.jpg"></li>
+            <li><img src="images/banners/banner04.jpg"></li>
+            <li><img src="images/banners/banner05.jpg"></li>
+            <li><img src="images/banners/banner06.jpg"></li>
+            <li><img src="images/banners/banner07.jpg"></li>
+            <li><img src="images/banners/banner08.jpg"></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    var li = document.getElementById('banner').getElementsByTagName("li");
+    var num = 0;
+    var len = li.length;
 
-<div id=banner>
-    <ul>
-    <li><img src="images/首页banner01.jpg"></li>
-    <li><img src="images/首页banner02.jpg"></li>
-    <li><img src="images/首页banner03.jpg"></li>
-    <li><img src="images/首页banner04.jpg"></li>
-    <li><img src="images/首页banner05.jpg"></li>
-    <li><img src="images/首页banner06.jpg"></li>
-    <li><img src="images/首页banner07.jpg"></li>
-   <li> <img src="images/首页banner08.jpg"></li>
-    </ul>
-</div>
-<script type="text/javascript">
-        var li=document.getElementById('banner').getElementsByTagName("li");
-    var num=0;
-    var len=li.length;
+    setInterval(function() {
+        li[num].style.display = "none";
+        num = ++num == len ? 0 : num;
+        li[num].style.display = "inline-block";
 
-    setInterval(function(){
-        li[num].style.display="none";
-        num=++num==len?0:num;
-        li[num].style.display="inline-block";
-
-    },3000);//切换时间
-</script>
-<div>
-<ul>
-    <li>
-        <h1>关于我们</h1>
-        <div>
-            <img src="">
-        <div>
-        <h2>北京迎果科技有限公司</h2>
-           <p>xxxxx</p>
-       </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>管理团队</h2>
-        <p>xxxxx</p>
-               </div>
-     </div>
-     <div>
-            <img src="">
-        <div>
-        <h2>技术平台</h2>
-        <p>xxxxx</p>
-   </div>
-     </div>
-    </li>
-    <li><h1>联系方式</h1></li>
-</ul>
-</div>
-
-<footer>
-    苏ICP备15060253号-3<br>
-    Copyright@2010 - 2016  www.bjygmobile.com  All Right Reavered
-</footer>
+    }, 3000); //切换时间
+    </script>
+    <div id="information">
+        <ul>
+            <li>
+                <p>关于我们</p>
+                <table>
+                <tr>
+                <td><img src="images/company.png" alt=""></td>
+                <td><p class="artical-top">北京迎果科技有限公司</p>
+                    <p class="artical-comment">北京迎果科技有限公司(简称：迎果科技)成立于2014年，注册资金1000万，是一家年轻的移动互联网企业，我们致力于整合平台资源，融合多家移动互联网合作伙伴。迎果科技以社交媒体、APP端、PC端为载体，为广大企业提供营销工具及社会化营销整体解决方案。迎果科技充分挖掘移动互联网营销特点和优势，整合创意，创造互动出发消费行为，整合产品入口和销售平台，实现从互动到销售的一体化。</p></td>
+                </tr>
+                <tr>
+                <td><img src="images/group.png" alt=""></td>
+                <td><p class="artical-top">管理团队</p>
+                    <p class="artical-comment">迎果科技创始团队及合伙人均来自亚信、华为、用友等大数据服务领域高科技公司和国内外知名高校，技术经验及市场运营经验丰富，用友国际领先自主研发的核心技术，５０％以上的员工从事数据产品技术创新，业务经营创新，市场开拓创新及相应的技术研究工作。</p></td>
+                 </tr>
+                    
+               <tr>
+               <td><img src="images/it.png" alt=""></td>
+               <td><p class="artical-top">技术平台</p>
+                    <p class="artical-comment">迎果科技利用自身核心大数据技术，与众多在政府部门和大型企业建立战略合作伙伴关系，通过技术和商业模式创新，服务多个领域对的企业客户，目前迎果科技服务的客户包括征信、游戏、教育等，在未来我们将通过技术平台和服务能力整合更多的行业数据，服务更多领域的客户，让生活变得更加简单，更为方便，更有意义！</p></td>
+                </tr>
+            </table>
+            <li>
+                <p>公司地址</p>
+                <img src="images/map.png" alt="公司地址">
+            </li>
+            <li>
+                <p>联系方式</p>
+                <img src="images/contect.png" alt="联系方式">
+            </li>
+        </ul>
+    </div>
+    <footer>
+        苏ICP备15060253号-3
+        <br> Copyright@2014 - 2017 www.bjygmobile.com All Right Resvered
+    </footer>
 </body>
+
 </html>
