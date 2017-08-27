@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/debug-.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <style type="text/css">
+    #game-rank {
+        padding: 10px;
+        border-right: 1px solid #cccccc;
+    }
+
+    .rank-cell {
+        border-bottom: 1px solid #cccccc;
+    }
+
+    .rank-cell-left {
+        width: 80px;
+        height: 60px;
+        margin: 10px 10px 10px 0;
+    }
+
+    .rank-cell-right {
+        margin: 10px 10px 10px 0;
+        float: right;
+        height: 60px;
+    }
+
+    .rank-game-name {
+        font-size: 12px;
+        color: #333333;
+    }
+
+    .rank-game-brief {
+        font-size: 10px;
+        /*模拟底部对齐*/
+        margin-top: 12px;
+        color: #666666;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="game-rank" class="left-bar left">
+        <ul>
+            <li class="rank-cell">
+                <img class="rank-cell-left" src="images/leftbar/赤月传说.png" alt="">
+                <div class="rank-cell-right">
+                    <p class="rank-game-name">赤月传说II</p>
+                    <p class="rank-game-brief">下载量:1W</p>
+                </div>
+                <!-- <div class="clear"></div> -->
+            </li>
+            <li>
+                <img class="rank-cell-left" src="images/leftbar/赤月传说.png" alt="">
+                <div class="rank-cell-right">
+                    <p class="rank-game-name">赤月传说II</p>
+                    <p class="rank-game-brief">下载量:1W</p>
+                </div>
+                <!-- <div class="clear"></div> -->
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
