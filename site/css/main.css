@@ -10,17 +10,21 @@ body {
     padding: 0 15px 20px 15px;
 }
 
+#header {
+    margin: 20px 20px;
+}
+
 nav li {
     display: inline-block;
     color: black;
-    height: 42px;
-    line-height: 42px;
+    height: 36px;
+    line-height: 36px;
     margin: 0 40px 0 40px;
+    font-size: 14px;
 }
 
-nav li:active {
+.menu-selected {
     color: blue;
-
     border-bottom-width: 5px;
     border-bottom-color: blue;
     border-bottom-style: solid;
@@ -41,7 +45,6 @@ nav li:active {
 #banner ul li:not(:first-child) {
     display: none;
 }
-
 
 footer {
     text-align: center;
