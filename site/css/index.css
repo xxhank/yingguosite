@@ -1,55 +1,62 @@
-#top-games, #hot-games, #apps{
-  margin: 0 20% 0 20%;   
+#top-games, #hot-games, #apps {
+    margin: 0 20% 0 20%;
 }
 
- #top-games img {
-     height: 160px;
-     width: 140px;
- }
+#top-games img {
+    height: 266px;
+    width: 230px;
+}
 
- #top-games li {
-     display: inline-block;
-     margin: 0 8px;
- }
+.gamename {
+    color: #333333;
+    font-weight: bolder;
+    font-size: 13px;
+}
 
- #top-games>p {
-     text-align: left;
- }
-
- #hot-games img {
-     width: 132px;
-     height: 80px;
- }
-
- #hot-games li {
-     display: inline-block;
-     margin: 0 8px;
- }
-
-
- #hot-games>p {
-     text-align: left;
- }
-
- .blue-button {
-     background-color: #20B5F2;
-     /*padding: 0px 1px;*/
- }
-
- .blue-button a {
-     color: white;
- }
-
- .title {
-     font-size: 14px;
-     color: #333333
- }
-
- .brief {
-     font-size: 12px;
-     color: #999999;
- }
-
- #apps>p{
+#top-games>p {
     text-align: left;
- }
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 0;
+    color: #03b4f5;
+}
+
+#hot-games img {
+    width: 132px;
+    height: 80px;
+}
+
+#hot-games li {
+    display: inline-block;
+    margin: 0 8px;
+}
+
+
+#hot-games>p {
+    text-align: left;
+}
+
+.blue-button {
+    background-color: #20B5F2;
+    /*padding: 0px 1px;*/
+}
+
+.blue-button a {
+    color: white;
+}
+
+.title {
+    font-size: 14px;
+    color: #333333
+}
+
+.brief {
+    font-size: 12px;
+    color: #999999;
+}
+
+#apps>p {
+    text-align: left;
+}
+
+#kefu>img
