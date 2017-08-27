@@ -37,15 +37,33 @@ nav li {
 
 #banner ul li {
     list-style: none;
-    height: 250px;
+    width: 100%;
     text-align: center;
     overflow: hidden;
+}
+
+#banner ul li img {
+    height: 250px;
+    width: 100%;
 }
 
 #banner ul li:not(:first-child) {
     display: none;
 }
 
+/*#banner {
+    position: relative;
+    overflow: auto;
+}
+
+#banner li {
+    list-style: none;
+}
+
+#banner ul li {
+    float: left;
+}
+*/
 footer {
     text-align: center;
 }

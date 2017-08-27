@@ -4,277 +4,297 @@
 <head>
     <meta charset="utf-8">
     <title>迎果科技</title>
-    <link rel="stylesheet" type="text/css" href="css/apps.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/apps.css">
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="vendor/jquery-rollslide/rollSlide.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#must-have').rollSlide({
+            orientation: 'left',
+            num: 1,
+            v: 1000,
+            space: 3000,
+            isRoll: false
+        });
+
+    });
+    </script>
 </head>
 
 <body>
     <nav id="header">
         <ul>
-            <li> <img src="images/横版迎果logo.png"></li>
-            <li>首页</li>
-            <li>游戏</li>
+            <li><img src="images/横版迎果logo.png"></li>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="games.html">游戏</a></li>
             <li class="menu-selected">应用</li>
-            <li>关于我们</li>
+            <li><a href="about.html">关于我们</a></li>
         </ul>
     </nav>
-    <div class="main-top">
-        <dl class="tag-list">
-            <dt>
-                <img src="" alt="">
-                <p>休闲益智</p>
-            </dt>
-            <dd>消除 物理 音乐 策略塔防 休闲 猜猜看</dd>
-            <dt>
-                <img src="" alt="">
-                <p>动作射击</p>
-            </dt>
-            <dd>跑酷 格斗 空战 枪战 坦克</dd>
-            <dt>
-                <img src="" alt="">
-                <p>赛车竞速</p>
-            </dt>
-            <dd>赛车 摩托 模拟驾驶</dd>
-            <dt>
-                <img src="" alt="">
-                <p>网络游戏</p>
-            </dt>
-            <dd>卡牌 经营 RPG 动作</dd>
-            <dt>
-                <img src="" alt="">
-                <p>棋牌桌游</p>
-            </dt>
-            <dd>斗地主 麻将 棋类 桌游 纸牌</dd>
-            <dt>
-                <img src="" alt="">
-                <p>经营养成</p>
-            </dt>
-            <dd>战争 经营 装扮</dd>
-            <dt>
-                <img src="" alt="">
-                <p>角色扮演</p>
-            </dt>
-            <dd>解谜逃脱 回合制 ARPG 三国</dd>
-            <dt>
-                <img src="" alt="">
-                <p>体育竞技</p>
-            </dt>
-            <dd>篮球 足球 桌球 拳击 趣味运动</dd>
-            <dt>
-                <img src="" alt="">
-                <p>模拟辅助</p>
-            </dt>
-            <dd>模拟器 游戏助手 攻略</dd>
-        </dl>
-    </div>
-    <div class="games">
-        <table>
-            <tr>
+    <div id="main">
+        <div class="main-top">
+            <table border="1">
+                <tbody>
+                    <tr>
+                        <td align="left" class="catalog-field"> <img src="images/catalog-icons/休闲益智.png" alt=""> 休闲益智 </td>
+                        <td align="left" class="catalog-sub-field"><span>消除</span><span> 物理 </span><span>音乐 </span><span>策略塔防 </span><span>休闲</span><span> 猜猜看</span></td>
+                        <td align="left" class="catalog-field"> <img src="images/catalog-icons/动作射击.png" alt="">动作射击 </td>
+                        <td align="left" class="catalog-sub-field"> <span>跑酷 </span><span>格斗 </span><span>空战 </span><span>枪战 </span><span>坦克</span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/赛车竞速.png" alt=""> 赛车竞速
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>赛车 </span><span>摩托 </span><span>模拟驾驶</span></td>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/网络游戏.png" alt=""> 网络游戏
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>卡牌 </span><span>经营 </span><span>RPG </span><span>动作</span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/棋牌桌游.png" alt=""> 棋牌桌游
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>斗地主</span><span> </span><span>麻将 </span><span>棋类 </span><span>桌游</span><span>纸牌</span></td>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/经营养成.png" alt=""> 经营养成
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>战争 </span><span>经营 </span><span>装扮</span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/角色扮演.png" alt=""> 角色扮演
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>解谜逃脱 </span><span>回合制 </span><span>ARPG </span><span>三国</span></td>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/体育竞技.png" alt=""> 体育竞技
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>篮球 </span><span>足球</span><span> 桌球 </span><span>拳击 </span><span>趣味运动</span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="catalog-field">
+                            <img src="images/catalog-icons/模拟辅助.png" alt=""> 模拟辅助
+                        </td>
+                        <td align="left" class="catalog-sub-field"><span>模拟器 </span><span>游戏助手 </span><span>攻略</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="games">
+            <table>
+                <tr>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">皇室战争-新天梯模式</p>
+                        <p class="games-cell-brief">8362万下载 102.14MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">卡通农场</p>
+                        <p class="games-cell-brief">945万下载 88.41MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">球球大作战</p>
+                        <p class="games-cell-brief">1.1亿下载 76.06MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">保卫萝卜3</p>
+                        <p class="games-cell-brief">842万下载 170.27MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">不思议迷宫</p>
+                        <p class="games-cell-brief">6万下载 93.93MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">聚爆</p>
+                        <p class="games-cell-brief">46万下载 1.75GB</p>
+                    </td>
+                </tr>
                 <td>
-                    <img src="">
-                    <p>皇室战争-新天梯模式</p>
-                    <p>8362万下载 102.14MB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">迷你世界</p>
+                    <p class="games-cell-brief">1445万下载 66.67MB</p>
                 </td>
                 <td>
-                    <img src="">
-                    <p>卡通农场</p>
-                    <p>945万下载 88.41MB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">汤姆猫跑酷</p>
+                    <p class="games-cell-brief">2754万下载 65.6MB</p>
                 </td>
                 <td>
-                    <img src="">
-                    <p>球球大作战</p>
-                    <p>1.1亿下载 76.06MB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">我的汤姆猫</p>
+                    <p class="games-cell-brief">1472万下载 79.17MB</p>
                 </td>
                 <td>
-                    <img src="">
-                    <p>保卫萝卜3</p>
-                    <p>842万下载 170.27MB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">我的世界盒子(联机版)</p>
+                    <p class="games-cell-brief">3029万下载 15.28MB</p>
                 </td>
                 <td>
-                    <img src="">
-                    <p>不思议迷宫</p>
-                    <p>6万下载 93.93MB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">欢乐麻将</p>
+                    <p class="games-cell-brief">3664万下载 57.83MB</p>
                 </td>
                 <td>
-                    <img src="">
-                    <p>聚爆</p>
-                    <p>46万下载 1.75GB</p>
+                    <img class="games-cell-img" src="images/games/东海道.png">
+                    <p class="games-cell-title">宾果消消消</p>
+                    <p class="games-cell-brief">1982万下载 82.72MB</p>
                 </td>
-            </tr>
-            <td>
-                <img src="">
-                <p>迷你世界</p>
-                <p>1445万下载 66.67MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>汤姆猫跑酷</p>
-                <p>2754万下载 65.6MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>我的汤姆猫</p>
-                <p>1472万下载 79.17MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>我的世界盒子(联机版)</p>
-                <p>3029万下载 15.28MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>欢乐麻将</p>
-                <p>3664万下载 57.83MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>宾果消消消</p>
-                <p>1982万下载 82.72MB</p>
-            </td>
-            </tr>
-        </table>
-    </div>
-    <div class="nesapps">
-        <ul>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>天天爱消除</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>6631万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>崩坏学园2</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>17万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>火影忍者</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>1003万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>小冰冰传奇</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>1967万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>欢乐斗地主</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>627万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>我叫MT</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>1495万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>地铁跑酷</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>2581万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>拳皇98</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>427万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>保卫萝卜</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>842万</p>
-            </li>
-            <li>
-                <img class="gameicon" src="" alt="">
-                <p>宾果消消消</p>
-                <img class="stars" src="" alt="">
-                <img class="download" src="" alt="">
-                <p>1982万</p>
-            </li>
-        </ul>
-    </div>
-    <div class="hotapps">
-        <table></table>
-        <tr>
-            <td>
-                <img src="">
-                <p>倩女幽魂</p>
-                <p>886万下载 558.82MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>梦幻诛仙</p>
-                <p>81万下载 351.2MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>老爹神偷</p>
-                <p>72万下载 24.09MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>率土之滨</p>
-                <p>52万下载 170.23MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>剑雨九天</p>
-                <p>7万下载 110.07MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>问道</p>
-                <p>382下载 420.18MB</p>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="">
-                <p>大话西游</p>
-                <p>748万下载 582.97MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>奇迹暖暖</p>
-                <p>2444万下载 355.92MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>神武2</p>
-                <p>73万下载 344MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>龙珠激斗(正版)</p>
-                <p>101万下载 405.13MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>剑侠世界</p>
-                <p>104万下载 660.14MB</p>
-            </td>
-            <td>
-                <img src="">
-                <p>热血传奇</p>
-                <p>415万下载 497.14MB</p>
-            </td>
-        </tr>
+                </tr>
+            </table>
+        </div>
+        <div id="must-have" class="roll-wrap roll_row">
+            <p class="section-title">装机必备</p>
+            <ul>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">天天爱消除</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">6631万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">崩坏学园2</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">17万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">火影忍者</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">1003万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">小冰冰传奇</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">1967万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">欢乐斗地主</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">627万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">我叫MT</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">1495万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">地铁跑酷</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">2581万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">拳皇98</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">427万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">保卫萝卜</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">842万</p>
+                </li>
+                <li>
+                    <img class="must-have-cell-icon" src="images/games/东海道.png" alt="">
+                    <p class="must-have-cell-name">宾果消消消</p>
+                    <img class="must-have-cell-stars" src="" alt="">
+                    <img class="must-have-cell-download" src="" alt="">
+                    <p class="must-have-cell-download-text">1982万</p>
+                </li>
+            </ul>
+            <a class="control pre" href="javascript:;">&lt;</a>
+            <a class="control next" href="javascript:;">&gt;</a>
+        </div>
+        <div id="hotapps">
+            <p class="section-title">时下热门</p>
+            <table>
+                <tr>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">倩女幽魂</p>
+                        <p class="games-cell-brief">886万下载 558.82MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">梦幻诛仙</p>
+                        <p class="games-cell-brief">81万下载 351.2MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">老爹神偷</p>
+                        <p class="games-cell-brief">72万下载 24.09MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">率土之滨</p>
+                        <p class="games-cell-brief">52万下载 170.23MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">剑雨九天</p>
+                        <p class="games-cell-brief">7万下载 110.07MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">问道</p>
+                        <p class="games-cell-brief">382下载 420.18MB</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">大话西游</p>
+                        <p class="games-cell-brief">748万下载 582.97MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">奇迹暖暖</p>
+                        <p class="games-cell-brief">2444万下载 355.92MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">神武2</p>
+                        <p class="games-cell-brief">73万下载 344MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">龙珠激斗(正版)</p>
+                        <p class="games-cell-brief">101万下载 405.13MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">剑侠世界</p>
+                        <p class="games-cell-brief">104万下载 660.14MB</p>
+                    </td>
+                    <td>
+                        <img class="games-cell-img" src="images/games/东海道.png">
+                        <p class="games-cell-title">热血传奇</p>
+                        <p class="games-cell-brief">415万下载 497.14MB</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
     <footer>
         苏ICP备15060253号-3

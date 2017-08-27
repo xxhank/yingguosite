@@ -1,0 +1,109 @@
+#main {
+    width: 1003px;
+    padding-top: 10px;
+}
+
+.section-title {
+    height: 42px;
+    line-height: 42px;
+    font-size: 21px;
+    color: #ffa53a;
+    text-align: left;
+    border: 1px solid #e8e8e8;
+    border-bottom-style: none;
+    padding-left: 10px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table,
+td,
+th {
+    border: 1px solid #e8e8e8;
+}
+
+
+/*分类*/
+
+.catalog-field {
+    width: 120px;
+    height: 44px;
+}
+
+.catalog-field>img {
+    margin: 0 9px;
+}
+
+.catalog-sub-field {
+    width: 380px;
+    height: 44px;
+    padding-left: 5px;
+}
+
+.catalog-sub-field span {
+    margin: 0 5px;
+}
+
+
+/*热门游戏*/
+
+#games {
+    margin-top: 20px;
+}
+
+.games-cell-img {
+    width: 110px;
+    height: 110px;
+    margin: 20px 28px;
+}
+
+.games-cell-title {
+    color: #333333;
+    font-weight: bolder;
+}
+
+.games-cell-brief {
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+
+/*装机必备*/
+
+#must-have {
+    margin-top: 20px;
+}
+
+#must-have>ul {
+    border: 1px solid #e8e8e8;
+    height: 124px;
+    overflow: hidden;
+    text-align:left;
+}
+
+#must-have li {
+    display: inline-block;
+    text-align: center;
+}
+
+.must-have-cell-icon {
+    width: 64px;
+    height: 64px;
+    margin: 8px 18px;
+}
+
+.must-have-cell-name {
+    color: #2b2b2b;
+}
+
+.must-have-cell-download-text {
+    color: #9f9f9f;
+}
+
+/* 时下热门*/
+
+#hotapps {
+    margin-top: 20px;
+}

@@ -1,44 +1,74 @@
-#top-games, #hot-games, #apps {
-    margin: 0 20% 0 20%;
+#main {
+    width: 1010px;
+}
+
+
+
+
+
+
+/*区块标题*/
+
+.section-name {
+    text-align: left;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 0 0 0;
+}
+
+.section-name-hilite {
+    color: #03b4f5;
+}
+
+
+
+
+
+/*火爆游戏*/
+
+#top-games table {
+    border-spacing: 28px 20px;
+    margin-left: -28px;
 }
 
 #top-games img {
-    height: 266px;
-    width: 230px;
+    width: 220px;
+    height: 256px;
 }
 
 .gamename {
     color: #333333;
-    font-weight: bolder;
-    font-size: 13px;
+    font-weight: 800;
+    font-size: 14px;
+    margin-top: 10px;
 }
 
-#top-games>p {
-    text-align: left;
-    font-weight: bolder;
-    font-size: 20px;
-    padding: 10px 0;
-    color: #03b4f5;
-}
+
+
+
+
+/*热门游戏*/
 
 #hot-games img {
-    width: 132px;
-    height: 80px;
+    width: 220px;
+    height: 132px;
 }
 
-#hot-games li {
-    display: inline-block;
-    margin: 0 8px;
+#hot-games table {
+    border-spacing: 16px 20px;
+    margin-left: -16px;
+    padding-top: -20px;
 }
 
-
-#hot-games>p {
+#hot-games p {
     text-align: left;
+    height: 28px;
+    margin: 5px 0 0 0;
 }
 
 .blue-button {
-    background-color: #20B5F2;
-    /*padding: 0px 1px;*/
+    background-color: #03b4f5;
+    padding: 2px 10px;
 }
 
 .blue-button a {
@@ -55,8 +85,78 @@
     color: #999999;
 }
 
-#apps>p {
+
+
+/* 更多游戏*/
+
+#apps-kefu-container {
     text-align: left;
 }
 
-#kefu>img
+#apps {
+    display: inline-block;
+    /* width: 690px;*/
+}
+
+.more-app-cell-even {
+    background-color: #eaeaea;
+}
+
+.more-app-cell-odd {
+    background-color: #f5f5f5;
+}
+
+.more-apps-cell-active {
+    width: 340px;
+    height: 67px;
+}
+
+.more-apps-cell-normal {
+    width: 340px;
+    height: 33px;
+}
+
+.more-apps-cell-normal>span {
+    line-height: 33px;
+}
+
+.more-apps-cell-active>p {
+    display: inline-block;
+    padding-top: 13px;
+}
+
+.more-apps-cell-active>img {
+    height: 100%;
+    float: right;
+}
+
+.more-apps-cell-name {
+    color: #333333;
+    margin-left: 10px;
+}
+
+.more-apps-cell-brief {
+    color: #999999;
+    margin-left: 10px;
+}
+
+#apps>p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+
+#kefu {
+    float: right;
+}
+
+#kefu>p {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#kefu>img {
+    border: 1px solid #cccccc;
+    width: 310px;
+    height: 200px;
+}
