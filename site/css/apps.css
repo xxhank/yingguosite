@@ -25,6 +25,8 @@ th {
 }
 
 
+
+
 /*分类*/
 
 .catalog-field {
@@ -45,6 +47,8 @@ th {
 .catalog-sub-field span {
     margin: 0 5px;
 }
+
+
 
 
 /*热门游戏*/
@@ -70,6 +74,8 @@ th {
 }
 
 
+
+
 /*装机必备*/
 
 #must-have {
@@ -80,7 +86,7 @@ th {
     border: 1px solid #e8e8e8;
     height: 124px;
     overflow: hidden;
-    text-align:left;
+    text-align: left;
 }
 
 #must-have li {
@@ -101,6 +107,8 @@ th {
 .must-have-cell-download-text {
     color: #9f9f9f;
 }
+
+
 
 /* 时下热门*/
 
