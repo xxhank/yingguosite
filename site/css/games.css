@@ -10,13 +10,14 @@
     border: 1px solid #e9e9e9;
     padding: 24px 32px;
     background-color: #fff;
-    width: 1000px;
+    width: 946px;
     height: 310px;
+    margin:  20px auto;
 }
 
 #recommend-slide {
     position: relative;
-    width: 1000px;
+    width: 948px;
     height: 310px;
 }
 
@@ -27,7 +28,7 @@
 }
 
 #recommend-slide .content ul li {
-    width: 1000px;
+   width: 948px;
     height: 310px;
 }
 
