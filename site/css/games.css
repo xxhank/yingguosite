@@ -58,7 +58,7 @@
     *zoom: 1;
     *display: inline;
     overflow: hidden;
-    margin: 0 0 0 10px;
+    margin: 0 0 0 20px;
     font-size: 0;
     line-height: 0;
     letter-spacing: normal;
@@ -149,7 +149,7 @@
 
 .recommend-cell-right {
     vertical-align: top;
-    padding: 5px 20px;
+    padding: 5px 0 5px 20px;
 }
 
 
