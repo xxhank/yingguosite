@@ -27,6 +27,8 @@ th {
 
 
 
+
+
 /*分类*/
 
 .catalog-field {
@@ -47,6 +49,8 @@ th {
 .catalog-sub-field span {
     margin: 0 5px;
 }
+
+
 
 
 
@@ -76,6 +80,8 @@ th {
 
 
 
+
+
 /*装机必备*/
 
 #must-have {
@@ -84,7 +90,7 @@ th {
 
 #must-have>ul {
     border: 1px solid #e8e8e8;
-    height: 124px;
+    height: 150px;
     overflow: hidden;
     text-align: left;
 }
@@ -107,6 +113,8 @@ th {
 .must-have-cell-download-text {
     color: #9f9f9f;
 }
+
+
 
 
 
