@@ -3,6 +3,12 @@
 }
 
 
+
+
+
+
+
+
 /*推荐*/
 
 #recommend {
@@ -12,7 +18,7 @@
     background-color: #fff;
     width: 946px;
     height: 310px;
-    margin:  20px auto;
+    margin: 20px auto;
 }
 
 #recommend-slide {
@@ -28,7 +34,7 @@
 }
 
 #recommend-slide .content ul li {
-   width: 948px;
+    width: 948px;
     height: 310px;
 }
 
@@ -53,12 +59,17 @@
     padding: 0px 0px;
 }
 
+.tag {
+    width: 420px;
+    margin-left: 20px;
+}
+
 #recommend-slide .tag li {
     display: inline-block;
     *zoom: 1;
     *display: inline;
     overflow: hidden;
-    margin: 0 0 0 20px;
+    margin: 0 0 0 10px;
     font-size: 0;
     line-height: 0;
     letter-spacing: normal;
@@ -121,7 +132,7 @@
     height: 310px;
 }
 
-.recommend-cell-video{
+.recommend-cell-video {
     width: 490px;
     height: 310px;
 }
@@ -157,6 +168,12 @@
     vertical-align: top;
     padding: 5px 0 5px 20px;
 }
+
+
+
+
+
+
 
 
 /*左侧边栏*/
