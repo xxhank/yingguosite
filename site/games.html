@@ -3,7 +3,7 @@
 
 <head>
     <title>迎果科技</title>
-    <link rel="stylesheet" type="text/css" href="css/debug-.css">
+    <!--     <link rel="stylesheet" type="text/css" href="css/debug-.css">-->
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/games.css">
@@ -32,9 +32,20 @@
             callback: function(current) {
                 $("#current3").text(current)
             }
-        });
 
+        });
     });
+
+    function play(item) {
+        var playing = $(item).attr["playing"] || false;
+        if (playing) {
+            item.play();
+            $(item).attr["playing"] = true;
+        } else {
+            item.pause();
+            $(item).attr["playing"] = false;
+        }
+    }
     </script>
 </head>
 
@@ -56,7 +67,10 @@
                         <table class="recommend-cell">
                             <tr>
                                 <td class="video">
-                                    <img src="images/推荐/赤月传说video.png">
+                                    <!-- <img src="images/推荐/赤月传说video.png"> -->
+                                    <video id="recommend-cell-video-1" class="recommend-cell-video" poster="images/推荐/赤月传说video.png" width="490" height="310">
+                                        <source src="./videos/赤月传说2宣传.mp4" type="video/mp4"> Your browser doesn't support HTML5 video.
+                                    </video>
                                 </td>
                                 <td class="recommend-cell-right">
                                     <p class="name">

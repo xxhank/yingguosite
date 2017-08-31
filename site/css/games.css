@@ -121,6 +121,12 @@
     height: 310px;
 }
 
+.recommend-cell-video{
+    width: 490px;
+    height: 310px;
+}
+
+
 .recommend-cell-name {
     font-size: 30px;
     color: #03b4f5;
