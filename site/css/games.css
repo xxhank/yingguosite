@@ -54,6 +54,12 @@
     /*background-color: rgba(0, 0, 0, 0.5);*/
 }
 
+/* 修改播放器控件不能点击的问题*/
+#recommend-slide .tag {
+    margin-left: 500px;
+    width: 448px;
+}
+
 #recommend-slide .tag ul {
     height: 60px;
     padding: 0px 0px;
@@ -136,7 +142,6 @@
     width: 490px;
     height: 310px;
 }
-
 
 .recommend-cell-name {
     font-size: 30px;
